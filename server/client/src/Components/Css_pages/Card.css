@@ -1,0 +1,74 @@
+.card___container {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease, transform 0.7s ease; /* Include transition for transform */
+}
+
+.card___container:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.card___container .card__love-btn {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: 1; /* Ensure the heart icon is on top */
+}
+
+.card___container:hover .card__img {
+  transform: scale(1); /* Resetting the transform for the image */
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  transform: scale(1); /* Initial state */
+  transition: transform 0.5s ease; /* Keep the image transition separate */
+}
+
+.card__text {
+  transition: opacity 0.5s ease; /* Adjust text transition speed */
+}
+
+.card___container:hover .card__text {
+  opacity: 0.8;
+}
+
+.card___container:not(:hover) {
+  transform: scale(1); /* Reset the scale when not hovered */
+}
+.TotalCart_Items {
+  position: sticky;
+  top: 20%;
+}
+
+.sign-card-container {
+  position: relative;
+}
+
+.sign-card-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.sign-card {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  width: 100%;
+  border: 2px solid #ccc; /* Add border */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  background-color: rgba(255, 255, 255, 0.4); /* Add background color */
+}

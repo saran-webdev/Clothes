@@ -1,0 +1,27 @@
+.main-navbar {
+  padding: 10px;
+}
+
+.main-navbar .bg-black {
+  background-color: black;
+}
+
+.main-navbar .text-white {
+  color: white;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+  .main-navbar .d-flex {
+    display: block !important;
+  }
+
+  .main-navbar .text-white {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.Adds {
+  /* background-color: dark; */
+  color: white;
+}
